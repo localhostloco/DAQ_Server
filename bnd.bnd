@@ -1,0 +1,16 @@
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Name: Server Bundle
+Bundle-Description: REST server
+Bundle-Vendor: Daniel Susumu
+Bundle-Activator: server.impl.Activator
+Import-Package:  \
+	datamanager,\
+	datamanager.impl,\
+	javax.ws.rs,\
+	*
+Private-Package:  \
+	server.impl,\
+	server.tracker,\
+	server
+-runfw: org.eclipse.osgi;version='[3.10.1.v20140909-1633,3.10.1.v20140909-1633]'
+-runee: JavaSE-1.8
